@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="WebViewFreeze.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WebViewFreeze"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Click="OnNewWindowClicked"
+                Content="New Window" />
+        <TextBox Grid.Row="1"/>
+        <TextBox Grid.Row="2"/>
+        <WebView x:Name="Editor" Grid.Row="3" 
+                 DefaultBackgroundColor="AliceBlue"/>
+        <TextBlock Grid.Row="4" Padding="0 12" FontSize="15">
+            <Run Text="This sample reproduces an issue: After closing a secondary window, keyboard navigation using tab/shift tab to focus the webview freezes the UI thread"/>
+            <LineBreak/>
+            <LineBreak/>
+            <Run Text="Steps to reproduce:"/>
+            <LineBreak/>
+            <Run Text="1. Before clicking on new window button, focus any textbox and keep tab pressed, it will navigate smoothly across the controls."/>
+            <LineBreak/>
+            <Run Text="2. Then click new window button and open a secondary view. Close the secondary window."/>
+            <LineBreak/>
+            <Run Text="3. Now again focus any textbox and keep tab pressed, it will start navigating between the controls, then within few seconds, UI will freeze."/>
+            <LineBreak/>
+            <LineBreak/>
+            <Run Text="Note: This issue occurs only in builds newer than 17763. When running in 17763, this issue doesn't occur." Foreground="Red"/>
+        </TextBlock>
+    </Grid>
+</Page>

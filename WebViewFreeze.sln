@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31409.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebViewFreeze", "WebViewFreeze.csproj", "{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Debug|ARM.ActiveCfg = Debug|x86
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Debug|ARM64.ActiveCfg = Debug|x86
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Debug|x64.ActiveCfg = Debug|x64
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Debug|x64.Build.0 = Debug|x64
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Debug|x64.Deploy.0 = Debug|x64
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Debug|x86.ActiveCfg = Debug|x86
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Debug|x86.Build.0 = Debug|x86
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Debug|x86.Deploy.0 = Debug|x86
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Release|ARM.ActiveCfg = Release|x86
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Release|ARM64.ActiveCfg = Release|x86
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Release|x64.ActiveCfg = Release|x64
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Release|x64.Build.0 = Release|x64
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Release|x64.Deploy.0 = Release|x64
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Release|x86.ActiveCfg = Release|x86
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Release|x86.Build.0 = Release|x86
+		{CDE3C4B7-72AA-4830-AA88-4F44A3DD5B09}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BC1A0DD-BB62-4F03-996E-9118A551BE35}
+	EndGlobalSection
+EndGlobal
